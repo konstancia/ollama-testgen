@@ -1,3 +1,4 @@
+
 # 🧪 Ollama TestGen — AI-Generated QA Dashboard
 
 This project helps QA teams **automatically generate manual and automation test cases** from Jira requirements using AI models (via Ollama), and visualize/manage them through a beautiful **React + FastAPI dashboard**.
@@ -18,20 +19,7 @@ This project helps QA teams **automatically generate manual and automation test 
 
 ## 📁 Folder Structure
 
-ollama_testgen/
-├── backend/ # FastAPI server: fetch Jira, generate tests, serve API
-│ ├── main.py
-│ ├── generator_manual.py
-│ ├── generator_auto.py
-│ └── ...
-├── frontend/ # React dashboard (port 3000+)
-│ ├── src/
-│ │ ├── App.jsx
-│ │ └── ...
-├── manual/test_cases/ # Saved manual test files
-├── automation/test_cases/ # Saved automation test files
-├── .env # Secret Jira + Ollama API info
-└── README.md
+<img width="625" height="311" alt="Screenshot 2025-07-17 at 3 35 13 PM" src="https://github.com/user-attachments/assets/4384a9eb-e405-49bb-9e9a-a6ea0ec9e29c" />
 
 
 ---
@@ -76,29 +64,22 @@ The dashboard will open at:
 Tickets with the label (e.g. Hackathon) will be fetched.
 
 Generated test cases are saved and attached to Jira.
-
 Use the dashboard to search, preview, and regenerate test cases.
-
 Click 📄 Manual or 📄 Auto to preview test content.
-
 Click Regenerate to refresh test cases.
 
 🤝 **Collaborating**
 To collaborate with your team:
 
 Push this project to GitHub
-
 Invite teammates under Settings → Collaborators
-
 Share this repo and setup instructions
 
 📌 Notes
 Models are run via Ollama
 
 React UI styled with Tailwind + shadcn/ui (optional)
-
 Jira API uses basic auth with API token
-
 Modify JQL in main.py to match your workflow
 
 📣 Credits
